@@ -22,6 +22,7 @@ esy test
 | [src/cli.re](src/cli.re)     | Our main library (dune). It's specified as a library to be able to be used for the tests as well.                    |
 | [bin/app.re](bin/app.re)     | Our main executable (dune). Uses our own made `cli`-library.                                                         |
 | [tests/cli.re](tests/cli.re) | Our only test file (dune). Uses our own made `cli`-library and OCaml-library `alcotest` as our testrunner.           |
+| [cli.opam](cli.opam)         | Needed for dune to pick up `src/cli.re` as a library.                                                                |
 
 ## Dependencies
 
