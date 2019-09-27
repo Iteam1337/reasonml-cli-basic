@@ -1,0 +1,4 @@
+(library
+ (name cli)
+ (public_name cli)
+ (libraries console.lib pastel.lib tablecloth-native))

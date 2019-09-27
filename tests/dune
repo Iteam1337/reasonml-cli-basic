@@ -1,0 +1,3 @@
+(tests
+ (names cli_test)
+ (libraries alcotest cli pastel.lib))

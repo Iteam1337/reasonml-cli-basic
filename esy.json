@@ -1,0 +1,27 @@
+{
+  "name": "hello-reason-cli",
+  "version": "1.0.0",
+  "license": "MIT",
+  "esy": {
+    "build": "refmterr dune build -p cli"
+  },
+  "scripts": {
+    "start": "esy refmterr dune exec bin/app.exe",
+    "format": "esy dune build @fmt --auto-promote",
+    "test": "esy dune exec tests/cli_test.exe"
+  },
+  "dependencies": {
+    "@opam/alcotest": "0.8.5",
+    "@opam/dune": "1.11.3",
+    "@opam/reason": "*",
+    "@opam/tablecloth-native": "0.0.6",
+    "@reason-native/pastel": "^0.2.1",
+    "ocaml": "<4.8.0",
+    "refmterr": "^3.2.2"
+  },
+  "resolutions": {
+    "@opam/merlin-extend": "0.4",
+    "@opam/reason": "let-def/reason:reason.opam#bd07255b6674c3dfae8edb037b6865f8490abaff"
+  }
+}
+
