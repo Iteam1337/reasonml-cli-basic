@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "esy": {
-    "build": "refmterr dune build -p cli"
+    "build": "dune build -p cli",
+    "buildDev": "refmterr dune build -p cli"
   },
   "scripts": {
     "start": "esy refmterr dune exec bin/app.exe",
